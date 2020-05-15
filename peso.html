@@ -18,17 +18,18 @@
       var peso_final = 0;
       if (planeta == 1)
       {
-        peso_final = peso * g_marte / g_tierra;
+        peso_final = parseInt(peso * g_marte / g_tierra);
+        document.write("Tu peso en Marte es: <strong>" + peso_final + " kgs.</strong>");
       }
       else if (planeta == 2)
       {
-        peso_final = peso * g_jupiter / g_tierra;
+        peso_final = parseInt(peso * g_jupiter / g_tierra);
+        document.write("Tu peso en Júpiter es: <strong>" + peso_final + " kgs.</strong>");
       }
       else {
         peso_final = 1000000;
+        document.write("Tu peso en Kriptón es: <strong>" + peso_final + " kgs.</strong>");
       }
-      peso_final = parseInt(peso_final);
-      document.write("Tu peso en Marte es: <strong>" + peso_final + " kgs.</strong>");
-    </script>
+          </script>
   </body>
 </html>
